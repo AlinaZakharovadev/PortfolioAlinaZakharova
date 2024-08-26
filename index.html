@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Alina Zakharova</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Alina Zakharova</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt=">Alina Zakharova" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Alina Zakharova</h1>
+        <p class="section__text__p2">
+          JavaScript (ReactJS) Frontend Developer
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('#')">
+            Download CV
+          </button>
+
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/alina-zakharova-ux/','_blank')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/AlinaZakharovadev','_blank')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <!-- <div class="section__pic-container"> -->
+          <!-- <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          /> -->
+        <!-- </div> -->
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Work Experience</h3>
+              <p><b>UX/UI designer</b> in the end-to-end IT company WearehereLabs (1.7 years)</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Codecademy: Front-End Engineer Career Path (2024)<br />Google UX Design Specialization Certificate (2022)<br /> Higher School of Economics: Additional classes - Computer Programming (2020) <br /> Higher School of Economics - Bachelor's degree in Law (2020)</p>
+            </div>
+          </div>
+          <!-- <div class="text-container">
+            <p>
+                Hello! I'm a Junior JavaScript Front-End Engineer with a background in UX/UI design, I specialize in building responsive and user-friendly web applications. Currently expanding skills in React. Let's connect and collaborate!
+            </p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>HTML5</h3>
+                 
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>CSS3</h3>
+                 
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>CSS-Modules / SCSS</h3>
+                 
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>JavaScript</h3>
+                 
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>ReactJS</h3>
+                 
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>Redux Toolkit</h3>
+                 
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>Git/GitHub</h3>
+                 
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>VSCode</h3>
+                 
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>Figma</h3>
+                  
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                
+                <div>
+                  <h3>English</h3>
+                  <p>B2</p>
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>Russian</h3>
+                  <p>Native</p>
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>German</h3>
+                  <p>A1</p>
+                </div>
+              </article>
+              <article>
+                
+                <div>
+                  <h3>Serbian</h3>
+                  <p>A1</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">My Recent Case</p>
+      <h1 class="title">Projects</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class=" project-title">
+              🚴🏻‍♂️BikeSHOP landing page
+            </h2>
+            <h3 class="project-aboutpr-title">
+              This project demonstrates the use of HTML and CSS to create an attractive landing page for displaying bike products and promotions. It follows BEM (Block, Element, Modifier) for easy and scalable CSS styling.
+            </h3>
+            <h3 class=" project-small-title">
+              {HTML, CSS}
+            </h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/AlinaZakharovadev/BikeSHOP-landing-page.git', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://alinazakharovadev.github.io/BikeSHOP-landing-page/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project2.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="project-title">
+              💵FinanceApp landing page
+            </h2>
+            <h3 class="project-aboutpr-title">
+              This project showcases the use of HTML, CSS, and JavaScript to create an engaging, visually appealing, and interactive landing page for promoting products and services.
+            </h3>
+            <h3 class="project-small-title">
+              {HTML, CSS, JavaScript}
+            </h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/AlinaZakharovadev/Uifry_landing_page.git', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://alinazakharovadev.github.io/Uifry_landing_page/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project3.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class=" project-title">
+              🍓Strawberry Number Guesser App
+            </h2>
+            <h3 class="project-aboutpr-title">
+              This project showcases the use of HTML, CSS, and JavaScript to create a number guessing game where players guess a number between 0 and 9 and compare it with the computer's guess.
+            </h3>
+            <h3 class=" project-small-title">
+              {HTML, CSS, JavaScript}
+            </h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/AlinaZakharovadev/Strawberry-Number-Guesser-.git', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://alinazakharovadev.github.io/Strawberry-Number-Guesser-/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project4.jpg"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class=" project-title">🌤Weather App</h2>
+            <h3 class="project-aboutpr-title">
+              This project allows users to input a location and view real-time weather information including temperature, wind speed, and humidity from the the OpenWeather API.
+            </h3>
+            <h3 class=" project-small-title">
+              {HTML, CSS, JavaScript}
+            </h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/AlinaZakharovadev/Weather_App.git', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://alinazakharovadev.github.io/Weather_App/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project5.jpg"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <h2 class="project-title">
+              🎬Film Finder App
+            </h2>
+            <h3 class="project-aboutpr-title">
+              This app allows users to search for random movies from a selected genre. The application fetches movie data from the TMDB (The Movie Database) API and displays the selected movie's information including title, overview, release date, poster, and cast.
+            <h3 class=" project-small-title">
+              {HTML, CSS, JavaScript}
+            </h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/AlinaZakharovadev/Film_Finder_App.git', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://alinazakharovadev.github.io/Film_Finder_App/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project6.jpg"
+                alt="Project 6"
+                class="project-img"
+              />
+            </div>
+            <h2 class=" project-title">
+              Real Estate Web App
+            </h2>
+            <h3 class="project-aboutpr-title">
+              This is the responsive real estate web app with a modern UI using React. The application features an intuitive interface for browsing and filtering property listings, with seamless navigation and interactive maps.
+            </h3>
+            <h3 class=" project-small-title">
+              {HTML, SCSS, JavaScript (ReactJS) + Leaflet maps}
+            </h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/AlinaZakharovadev/React_Lisaestate_Project6.git', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://react-lisaestate-project6.vercel.app/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project7.jpg"
+                alt="Project 7"
+                class="project-img"
+              />
+            </div>
+            <h2 class=" project-title">
+              🍕React Pizza App
+            </h2>
+            <h3 class="project-aboutpr-title">
+              This web app built using React to provide users with a smooth and responsive online pizza ordering experience. Features include browsing, filtering, sorting pizzas, adding items to the cart and changing the order.
+            </h3>
+            <h3 class=" project-small-title">
+              {HTML, SCSS, JavaScript (ReactJS + Redux Toolkit)}
+            </h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/AlinaZakharovadev/React_Pizza_Project.git', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://reactpizzaproject-alinas-projects-ab0a39bf.vercel.app/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">My Contacts</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:zakharova.alina.design@gmail.com"
+              >zakharova.alina.design@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a
+            href="https://www.linkedin.com/in/alina-zakharova-ux/"
+            target="_blank"
+            >LinkedIn</a</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &#169; 2024 Alina Zakharova. All Rights Reserved.</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
